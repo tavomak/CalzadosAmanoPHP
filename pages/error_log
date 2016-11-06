@@ -1,0 +1,13 @@
+[23-Jul-2016 13:56:45 America/Caracas] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/calzado1/public_html/include/functions/database.php on line 10
+[23-Jul-2016 13:56:45 America/Caracas] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/calzado1/public_html/include/functions/database.php on line 43
+[23-Jul-2016 13:56:55 America/Caracas] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/calzado1/public_html/include/functions/database.php on line 10
+[23-Jul-2016 13:56:55 America/Caracas] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/calzado1/public_html/include/functions/database.php on line 43
+[07-Aug-2016 01:11:16 America/Caracas] PHP Warning:  checkdate() expects parameter 2 to be long, string given in /home/calzado1/public_html/pages/registrar.php on line 68
+[16-Aug-2016 10:16:20 America/Caracas] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/calzado1/public_html/include/functions/database.php on line 10
+[16-Aug-2016 10:16:20 America/Caracas] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/calzado1/public_html/include/functions/database.php on line 43
+[16-Aug-2016 10:16:23 America/Caracas] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/calzado1/public_html/include/functions/database.php on line 10
+[16-Aug-2016 10:16:23 America/Caracas] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/calzado1/public_html/include/functions/database.php on line 43
+[16-Aug-2016 10:16:30 America/Caracas] PHP Warning:  mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/calzado1/public_html/include/functions/database.php on line 10
+[16-Aug-2016 10:16:30 America/Caracas] PHP Warning:  mysql_query() expects parameter 2 to be resource, boolean given in /home/calzado1/public_html/include/functions/database.php on line 43
+[17-Aug-2016 16:37:05 America/Caracas] PHP Warning:  checkdate() expects parameter 1 to be long, string given in /home/calzado1/public_html/pages/registrar.php on line 68
+[17-Aug-2016 16:37:35 America/Caracas] PHP Warning:  checkdate() expects parameter 1 to be long, string given in /home/calzado1/public_html/pages/registrar.php on line 68

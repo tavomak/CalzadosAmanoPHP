@@ -1,0 +1,123 @@
+.toggleMenu {
+    position: absolute;
+	left:20px;
+}
+.nav {
+    list-style: none;
+     *zoom: 1;
+	 background-image:url(../images/pix_azul.jpg);
+	position:fixed;
+	z-index:100;
+	 margin-left:0px;
+	 text-align:left;
+	 font-family: 'Open Sans Condensed', sans-serif;
+	 font-size:1.2em;
+	 font-weight:700;
+	 letter-spacing: 1px;
+}
+.nav:before,
+.nav:after {
+    content: " ";
+    display: table;
+}
+.nav:after {
+    clear: both;
+}
+.nav ul {
+    list-style: none;
+    width: 9em;
+}
+.nav a {
+    padding: 4px 25px;
+    color:#fff;
+}
+.nav li {
+    position: relative;
+}
+
+.nav > li {
+    float: left;
+	border-top: 1px solid #b4e5e9;
+
+}
+
+.nav li a.parent {
+	  background-image:url(../images/pix_azul.jpg);
+}
+.nav > li > .parent {
+    background-image: url("images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.nav > li > a {
+    display: block;
+
+}
+.nav li  ul {
+    position: absolute;
+    left: -9999px;
+}
+.nav > li.hover > ul {
+    left: 0;
+}
+.nav li li.hover ul {
+    left: 100%;
+    top: 0;
+}
+.nav li li a {
+    display: block;
+    background-color: rgba(0, 85, 105, 0.9);
+    position: relative;
+    z-index:100;
+	font-size:1.2em;
+   /* border-top: 1px solid #175e4c;*/
+}
+.nav li li a:hover {text-decoration:none;color:#ccc;}
+.nav li li li a {
+    background:#249578;
+    z-index:200;
+    border-top: 1px solid #1d7a62;
+}
+
+ .active {
+        display: block;
+    }
+    .nav > li {
+        float: none;
+    }
+    .nav > li > .parent {
+        background-position: 95% 50%;
+
+    }
+    .nav li li .parent {
+        background-image: url("images/downArrow.png");
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+    }
+    .nav ul {
+        display: block;
+        width: 100%;
+
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+	@media only screen and (min-width : 760px){
+ .nav{margin-top:0px; }
+
+
+}
+
+@media only screen and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+ .nav{margin-top:0px; }
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+	 .nav{margin-top:0px; }  }

@@ -1,0 +1,67 @@
+/*menu */
+
+ul.menu { list-style:none; margin-top:0px;width:100%; margin-left:auto; margin-right:auto; min-width:1150px;}
+ul.menu2 { list-style:none; margin-top:18px; }
+
+ul.menu > li /* Sólo para li de primer nivel */
+{  display:inline; float:left ; width:170px; text-align:center; padding-bottom:9px; margin-left:-41px; margin-right:42px; cursor:pointer;}
+
+ul.menu2 > li /* Para el menu inferior*/
+{  display:inline; float:left ; width:170px; text-align:center; padding-top:7px; cursor:pointer  }
+
+ul.menu> li > ul /* Solo para los ul debajo de los li de primer nivel. */
+{
+   position:absolute; top:20px; display:none; list-style:none; font-size:17px;  z-index:999;
+}
+
+ul.menu li {
+   position:relative; /* Las coordenadas de los ul inferiores serán relativas al <li> que los contiene */
+   width:160px;
+
+}
+/*ul.menu li:hover {background-image:url(image/site/menusel.png); background-position:bottom; background-repeat:no-repeat;}
+ul.menu li:hover {background-image:url(image/site/barra-btn-3px.png); background-position:bottom; background-repeat:no-repeat; }
+ul.menu2 li:hover {background-image:url(image/site/menusel.png); background-position:top; background-repeat:no-repeat; }*/
+
+ul.menu ul /* Para todos los ul debajo del ul.menu */
+{
+   position:absolute; /* Esta posición es relativa al <li> que contiene a este <ul> */
+   display:none;
+   list-style:none;
+   color:#e3e3e3;
+   margin-top:9px
+}
+
+ul.menu li:hover > ul {  display:block;  background-image:url(../images/accesorios_menu-fondo.png);}
+
+ul.menu li:hover > ul >li{  display:block;height:30px; padding-top:5px ; margin-top:1px; color:#333; }
+ul.menu li:hover ul li:hover{background-image:url(image/site/opcionsel.png); background-repeat:repeat; height:30px; }
+
+
+ul.menu ul  li ul/* Para el submenu */
+{
+   position:absolute; /* Esta posición es relativa al <li> que contiene a este <ul> */
+   display:none;
+   list-style:none;
+   color:#e3e3e3;
+   margin-top:-27px;
+   margin-left:151px
+
+}
+
+.btn_menu {text-decoration:none;width:137px;height:13px;display:inline-block; }
+a.btn_zapatos{background:url(../images/botones/accesorios_menu-zapatos.png);background-position: 138px 0px; /*float:left; */}
+a.btn_zapatoshover, a.btn_zapatos:hover{width:137px; background:url(../images/botones/accesorios_menu-zapatos.png);background-position: 0px 0px;}
+
+a.btn_plantillas{background:url(../images/botones/accesorios_menu-plantillas.png);background-position: 138px 0px; /*float:left; */}
+a.btn_plantillashover, a.btn_plantillas:hover{width:137px; background:url(../images/botones/accesorios_menu-plantillas.png);background-position: 0px 0px;}
+
+a.btn_lazos{background:url(../images/botones/accesorios_menu-lazos.png);background-position: 139px 0px; /*float:left; */}
+a.btn_lazoshover, a.btn_lazos:hover{width:137px; background:url(../images/botones/accesorios_menu-lazos.png);background-position: 0px 0px;}
+
+a.btn_pijamas{background:url(../images/botones/accesorios_menu-pijamas.png);background-position: 139px 0px; /*float:left; */}
+a.btn_pijamashover, a.btn_pijamas:hover{width:137px; background:url(../images/botones/accesorios_menu-pijamas.png);background-position: 0px 0px;}
+
+a.btn_cintillos{background:url(../images/botones/accesorios_menu-bandanas.png);background-position: 138px 0px; /*float:left; */}
+a.btn_cintilloshover, a.btn_cintillos:hover{width:137px; background:url(../images/botones/accesorios_menu-bandanas.png);background-position: 0px 0px;}
+

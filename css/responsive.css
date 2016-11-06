@@ -1,0 +1,27 @@
+@media only screen and (min-width : 760px){
+ .zapato{width:15%; margin-left:3.0em; }
+ .carousel {width:40%; left:30%; }
+ #imgProdPedido{width:20%;}
+.nav{margin-top:0px; }
+}
+
+@media only screen and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+ .zapato{width:15%; margin-left:3.0em; }
+ .carousel {width:40%; left:30%; }
+ #imgProdPedido{width:20%;}
+.nav{margin-top:0px; }
+}
+
+@media only screen
+and (min-width : 660px)
+and (max-width : 1024px)
+and (orientation : portrait) { .zapato{width:15%; margin-left:4.0em; }
+ .carousel {width:40%; left:30%;}
+ #imgProdPedido{width:40%;}
+ .nav{margin-top:0px; } }
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+}

@@ -1,0 +1,95 @@
+/* CSS reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+html,body {
+	margin:0;
+	padding:0;
+
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img {
+	border:0;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}s
+section, header{
+	display: block;
+}
+
+body {min-width:320px;}
+
+#wrapper {width:100%; font-family: 'Open Sans Condensed', sans-serif; color:#999999; min-width:320px; padding-top:130px; padding-bottom:40px; font-size:1.2em; }
+#intwrapper {position:relative; padding-left:20px; padding-right:30px;min-width:320px; margin: 0 auto;}
+
+h1 {font-size:1.8em; font-weight:300; color:#999999;}
+.titulo {color: rgba(0, 144, 158, 1); font-size:1.5em;}
+.miga {color: rgba(0, 144, 158, 1); font-size:1.0em; line-height:1.5em; font-weight:600; margin-bottom:10px;}
+.descripcion {font-size:1.2em; font-weight:400; line-height:1.0em;}
+#resultado{ width:100%; height:100%; padding-top:40%; color:#FFF; background-color:#009999; position:absolute; left:0; z-index:999;  font-family: 'Open Sans Condensed', sans-serif; font-size:24px; text-align:center; margin-top:-40px; display:none; }
+
+/*header*/
+.header{position:fixed; top:0px; left:0px; width:100%; height:auto; z-index: 999999; min-width:320px;}
+.redes, .fondoCampo {background-color:#009baa; padding-top:5px; padding-bottom:5px; text-align:center; }
+.fondoCampo { margin-top:2px;}
+.cintaMenu{ background-image:url(../images/movil/encabezado_background.jpg); padding-top:10px; padding-bottom:20px; height:auto; text-align:center;  min-width:300px;}
+#logo{ }
+a.btn_carrito {position: absolute; right:20px; }
+a.btn_iniciar {position: absolute; right:55px; }
+.btn_carrito .caption { opacity: 0.7; position:absolute; height:40px; width: 40px; top: -16px; left: 0px; padding: 10px 0px; color: #009999; text-align: center; font-weight:bold;}
+
+.vitrina { width: 100%; height:auto; padding-bottom: 20px; text-align:center; border-bottom: solid 2px #dadbdd; margin-bottom:20px;}
+
+.nosotros{text-align:right; margin-top:20px;}
+
+.galshoes{ width: 94%; margin:0 auto;}
+.zapato{position:relative; float:left; display:block; width:28%; text-align:center; margin-left:2.8%; }
+.imgzap {width:82%;}
+
+.datos, #botonp { width:100%; text-align:center; font-size:1.0em; }
+.fondoCampo p { color: #fff; padding-top:10px;}
+#myform select { background-color:#009baa; border-color::#009baa; }
+#listaColores{display:none;  margin-top:5px; margin-bottom:5px;}
+a.btn_add{ width:61px; height:46px;background:url(../images/botones/btn_agregar.png);background-position: 0px 0px; margin-right:2px; float:left}
+#botonp {margin-top:10px; margin-bottom:10px; padding-bottom:20px;}
+
+a.btn_conversion {width:61px;height:46px;background:url(../images/botones/btn_conversion.png);background-position: 0px 0px; float:left; margin-left:40px;}
+a.btn_conversion:hover {text-decoration:none;display:inline-block;width:61px; background:url(../images/botones/btn_conversion.png);background-position: 62px 0px; float:left; margin-left:40px;}
+
+.tienda {font-weight:300; color:#999999; font-size:1.5em; margin-top:10px;}
+.ubicacion {font-weight:300; color:#999999; font-size:1.0em;}
+
+#contacto input, #despacho input {width:100%; font-size:1.3em; margin-top:10px;font-family: 'Open Sans Condensed', sans-serif; }
+
+#nouser{ width:100%; height:auto; padding-top:50px; padding-bottom:40px; color:#FFF; background-color:#009999; position:absolute; top:50%; left:0; margin-top:-50px; z-index:999;  font-family: 'Open Sans Condensed', sans-serif; font-size:48px; text-align:center; display:block; }
+
+#nouser a {color:rgba(0, 85, 105, 0.9); }
+
+.opcion {text-decoration:none;width:109px;height:20px;display:inline-block; /*margin-left:7%; float:left;*/}
+
+.separador {padding-bottom:20px; border-bottom: solid 2px #dadbdd; margin-bottom:20px; width:100%; height:2px;display:inline-block;}
+
+.clr{clear: both;}
+
+a.boton{text-decoration:none; color:#fff; font-size:1.3em;}

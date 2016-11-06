@@ -1,0 +1,16 @@
+#resultado {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    width: 100%;
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    opacity: .7;
+    font-size: 12px;
+    padding-top: 100px;
+    display: none;
+}

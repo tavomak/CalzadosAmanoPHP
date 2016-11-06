@@ -1,0 +1,30 @@
+<?php include "cabecera.php";
+	include "../include/class/producto.php";
+	$obj = new producto();
+	$obj->loadAccesorios('11');
+	$n=count($obj->info);?>
+<body>
+<?php include "menu.php"; ?>
+<div id="wrapper">
+<div id="intwrapper">
+
+    <div class="titulo">DAMAS/NI&Ntilde;AS / <span class="miga">Bandanas</span></div>
+    <img src="../images/BANNER-BANDANAS2.jpg" width="100%" >
+<div class="galshoes" style="display:none;">
+<?php for ($i=0;$i<$n;$i++) : ?>
+	<div class="zapato">
+        <form action="producto.php" method="post" >
+       		<input type="image" src="../images/producto/thumb/<?php echo $obj->info[$i]['thumb']; ?>" class="imgzap" >
+              <?php if ($obj->info[$i]['nuevo']=='1') : ?><div class="nuevo">NUEVO</div><?php endif; ?>
+                    <?php if (strlen($obj->info[$i]['descuento'])>0) : ?><div class="descuento"><?php echo $obj->info[$i]['descuento']; ?></div><?php endif; ?>
+            <input name="id" type="hidden" value="<?php echo $obj->info[$i]['id']; ?>">
+		</form>
+	</div>
+<?php endfor; ?>
+</div>
+</div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

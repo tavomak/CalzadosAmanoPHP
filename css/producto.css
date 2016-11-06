@@ -1,0 +1,68 @@
+#zapato { width:100%}
+#cargazapato { width:50%; margin-left:10%; margin-top:5%;  float:left; margin-right:90px}
+#cargazapato .nuevo { position: absolute; width: 60px; height:40px; top: 15%; left: 28%;  background-image:url(../images/nuevo_g.png); background-repeat:no-repeat;color:#FFF; display:block; font-weight:600; padding-top:20px; text-align:center; font-size:1.0em; }
+#cargazapato .descuento { position: absolute; width: 60px; height:50px; top: 15%; left: 28%;background-image:url(../images/descuentos_g.png); background-size:cover; color:#FFF; display:block; font-weight:300; padding-top:10px; font-size:1.8em; text-align:center;}
+.btn_ver {margin-top:5%;float:right}
+a.btn_enviar{ width:60px; height:20px;background:url(../images/botones/btn_enviar.png);background-position: 0px 0px; margin-right:2px; float:left }
+a.btn_enviar:hover{width:60px; background:url(../images/botones/btn_enviar.png);background-position: 60px 0px;}
+
+a.btn_borrar{ width:60px; height:20px;background:url(../images/botones/btn_borrar.png);background-position: 0px 0px; margin-right:2px; float:left}
+a.btn_borrar:hover{width:60px; background:url(../images/botones/btn_borrar.png);background-position: 61px 0px;}
+
+a.btn_eliminar{ width:20px; height:20px;background:url(../images/botones/btn_p_borrar.png);background-position: 0px 0px; margin-right:2px; float:left}
+a.btn_eliminar:hover{width:20px; background:url(../images/botones/btn_p_borrar.png);background-position: 20px 0px;}
+
+.btn_editar{ width:20px; height:20px;background:url(../images/botones/btn_p_edicion.png);background-position: 0px 0px; margin-right:2px; float:left}
+.btn_editar:hover{width:20px; background:url(../images/botones/btn_p_edicion.png);background-position: 20px 0px;}
+
+a.btn_add{ width:61px; height:46px;background:url(../images/botones/btn_agregar.png);background-position: 0px 0px; margin-right:2px; float:left}
+a.btn_add:hover{width:61px; background:url(../images/botones/btn_agregar.png);background-position: 62px 0px;}
+
+.btn_borrar_orden{ width:115px; height:20px;background:url(../images/botones/btn_borrar_orden.png);background-position: 0px 0px; margin-right:2px; float:left}
+.btn_borrar_orden:hover{width:115px; background:url(../images/botones/btn_borrar_orden.png);background-position: 115px 0px;}
+
+.btn_generar_orden{ width:125px; height:20px;background:url(../images/botones/btn_generar_orden.png);background-position: 0px 0px; margin-right:2px; float:left}
+.btn_generar_orden:hover{width:125px; background:url(../images/botones/btn_generar_orden.png);background-position: 125px 0px;}
+
+.containerPedido{	width: 100%;  height:70%; bottom:25px; position:relative; margin-top:20px; overflow-y:scroll;}
+.containerConfirmar{position:absolute; margin-top:20px; bottom:40px; overflow-y:scroll;width: 100%;}
+.containerConfirmar .confirmar {margin:0 auto; width: 70%;}
+#centroPedido{position:relative;width:70%; height:100%; margin:auto;}
+
+#datos { float:left; width:70%;margin-top:5%; margin-right:10%; line-height:1.0em; color:#999; }
+
+#botonp { height:1.8em; padding-top:2.5em; padding-left:0.5em; /*width:11.0em*/}
+
+.itemTalla{display:block; float:left; width:30px; height:20px; padding-top:5px; margin-right:5px; border:solid 1px #01b7c2; text-align:center; background-color:#FFF; color:#999999; }
+.itemTalla:hover{background-color:#01b7c2; color:#FFF; }
+.nohay {display:block; float:left; width:30px; height:20px; padding-top:5px; margin-right:5px; border:solid 1px #01b7c2; text-align:center; background-color:#CCC; color:#01b7c2;}
+
+input, select, textarea {
+  border: solid 1px #009999;
+  transition: box-shadow 0.3s, border 0.3s;}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+

@@ -1,0 +1,70 @@
+/* ----------------------------------------------------------------
+Basic Document Styles 
+rgba(235,235,235,1)
+rgb(222,222,222)
+rgba(206,206,206,1)
+rgba(191,191,191,1)
+rgba(164,164,164,1) == rgba(147,147,147,1)
+-----------------------------------------------------------------*/
+body {margin:0px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; color:#333; font-size:12px;}
+.clearfix			{display:block; *zoom:1;}
+.clearfix:after		{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+* html .clearfix	{height:1%;} /* Hides from IE-mac \*/
+header		{position:relative; margin:0; padding:10px 5px; width:100%; height:110px; background: url("../images/header/header_fondo.jpg")  repeat-x; text-align:left;}
+#titulo_principal{ font-weight:bold; font-size:22px;position:relative; margin-top:50px}
+#titulo		{ font-weight:bold; font-size:14px; }
+#texto_menu	{ font-weight:bold; font-size:11px; }
+.subtitulo	{ font-weight:bold;font-size:12px; }
+.texto_general	{ font-size:12px; }
+.letra_chica	{ font-size:9px; }
+.boton 			{width:20px; height:20px}
+a		{text-decoration:none; color:rgb(0,82,91);}
+th		{ font-size:12px; font-weight:bold; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.fl	{ float:left;}
+.fr { float:right;}
+h2 { font-size:14px; font-weight:normal; float:left; padding:0px 5px 0px 0px; margin-top:2px;}
+#wrapper 	{position:absolute; margin-top:0px; width:100%; left:0%; margin-left:0px; }
+#seguridad 	{float:right; margin-top:200px; width:400px; }
+#olvido 	{position:relative; margin-top:80px; width:600px; }
+
+/*Centrar Area del manejador */
+/*Centrar Area del manejador */
+#intwrapper {margin:10px auto; height:auto; width:100%; max-width:908px;}
+#cabecera 	{margin:0 auto; width:100%; height:55px; background:rgb(222,222,222);}
+
+#logo {background-image:url(../images/header/header_logo.png); background-repeat:no-repeat; width:90%; height:100px; float:left; text-align:right; font-weight:bold; color:rgb(255,255,255);}
+
+/*menu a la izquierda */
+#menu 			{float:left; width:150px; height:100%; padding-bottom:10px; padding-top:10px; padding-left:15px; margin-right:0px; border-right:1px #999999 solid; overflow:auto;}
+#menu a			{color:#000;text-decoration: none;font-size:13px;font-family:Arial, Helvetica, sans-serif;}
+#menu a:hover	{color:rgb(0,82,91);}
+
+/* Opcion de menu seleccionado */
+.selected { text-decoration:none; font-weight:bold}
+
+/* Area de Trabajo */
+#content {width:700px; height:auto; float:left; font-size:11px; text-decoration:none; color:#666; background-color:#FFF; padding-top:10px; padding-bottom:10px; padding-left:10px; padding-right:10px; margin-left:10px}
+
+a.desactivar {display:block;width:30px;height: 17px;text-decoration:none;background:url(../../images/mc/desactivar.png);	background-position: 0px 0px;}
+a.desactivar:hover {background-position: 95px 0px;}
+
+a.activar {display:block;width:95px;height: 17px;text-decoration:none;background:url(../../images/mc/activar.png);	background-position: 0px 0px;	}
+a.activar:hover {background-position: 95px 0px;}
+
+a.cancelar {display:block;width:95px;height: 17px;text-decoration:none;background:url(../../images/mc/cancelar.png);	background-position: 0px 0px;	}
+a.cancelar:hover {background-position: 95px 0px;}
+
+a.guardar {display:block;width:95px;height: 17px;text-decoration:none;background:url(../../images/mc/guardar.png);	background-position: 0px 0px;	}
+a.guardar:hover {background-position: 95px 0px;}
+
+
+/*Titulo del area de trabajo*/
+#about_titulo {font-family:Tahoma, Geneva, sans-serif; font-size:16px; margin-bottom:10px}
+
+/*Mensaje de no se ha cargado la tabla*/
+#mensaje {}
+
+/*Número del paginador */
+.paginator { }
+
+input[type="text"],input[type="password"],select,textarea { width:95%; max-width:500px;}

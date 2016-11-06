@@ -1,0 +1,35 @@
+a.btn_enviar{ width:60px; height:20px;background:url(../images/botones/btn_enviar.png);background-position: 0px 0px; margin-right:2px; float:left }
+a.btn_enviar:hover{width:60px; background:url(../images/botones/btn_enviar.png);background-position: 60px 0px;}
+
+a.btn_recuperar {width:129px; height:20px; background-image:url(../images/botones/btn_recuperar.png); background-position: 0px 0px; float:left; margin-left:40px; 	}
+a.btn_recuperar:hover {width:129px;height:20px;background-image:url(../images/botones/btn_recuperar.png); background-position: 130px 0px; float:left; margin-left:40px;}
+
+a.btn_imprimir {width:168px; height:19px; background-image:url(../images/botones/btn_imprimir.jpg); background-position: 0px 0px; display:block;}
+a.btn_imprimir:hover {width:168px;height:19px;background-image:url(../images/botones/btn_imprimir.jpg); background-position: 168px 0px; display:block;}
+
+a.btn_borrar{ width:60px; height:20px;background:url(../images/botones/btn_borrar.png);background-position: 0px 0px; margin-right:2px; float:left}
+a.btn_borrar:hover{width:60px; background:url(../images/botones/btn_borrar.png);background-position: 61px 0px;}
+
+a.btn_rface{ width:182px; height:20px;background:url(../images/botones/btn_registro_face.png);background-position: 0px 0px; margin-right:2px; float:left}
+a.btn_rface:hover{width:182px; background:url(../images/botones/btn_registro_face.png);background-position: 182px 0px;}
+
+a.btn_loginface{ width:182px; height:20px;background:url(../images/botones/btn_m_inicioface.png);background-position: 0px 0px; margin-right:2px; float:left}
+a.btn_loginface:hover{width:182px; background:url(../images/botones/btn_m_inicioface.png);background-position: 182px 0px;}
+
+#contacto { float:right; margin-top:10%; margin-right:10%; line-height:1.5em}
+#address{ color:#999999; font-size: 0.9em; float:left; margin-top:310px; margin-left:-50%; text-align:right;width: 50%;  }
+#formRecuperar {margin-top:10%;  line-height:1.5em}
+input, select, textarea {
+  border: solid 1px #009999;
+  transition: box-shadow 0.3s, border 0.3s;}
+
+.titdireccion {color:#999999; font-weight:bold}
+#addressright{color:#999999; font-size: 0.9em;}
+
+#resultado{ width:100%; height:90px; padding-top:50px; color:#FFF; background-color:#009999; position:absolute; top:50%; left:0; margin-top:-50px; z-index:999;  font-family: 'Open Sans Condensed', sans-serif; font-size:48px; text-align:center; display:none; }
+
+#resultado a {text-decoration:none; color:#FFF;}
+
+#centro {display:inline-block; width:50%; height:90%; margin:0 auto; }
+#centroinicia {display:inline-block; width:25%; height:100%; margin:0 auto;}
+#containerPlan{font-size:16px; position:absolute; bottom:40px; top:160px;  width: 90%; overflow-y:auto;   }
