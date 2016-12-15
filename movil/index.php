@@ -10,7 +10,36 @@ $producto = new producto();
 $producto->loadCategoria(rand(1, 2));
  ?>
 <body>
+
+<!-- Button trigger modal
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="../images/logo.png" alt="Calzados a mano">
+                    </div>
+                    <div class="modal-body">
+                        <p class="modal-title" id="myModalLabel"><strong>¡Calzados A´Mano les desea una Feliz Navidad y Prospero Año Nuevo!</strong></p>
+                        <br>
+                        <p>Pedidos recibidos a partir del 19 de diciembre de 2016 serán enviados a partir del 17 de enero de 2017 para garantizar un buen servicio.</p>
+                        <p>Gracias por preferirnos.</p>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
 <?php include "menu.php"; ?>
+
+
 <div id="wrapper">
 <div id="intwrapper">
 
@@ -60,5 +89,14 @@ $producto->loadCategoria(rand(1, 2));
 </div>
 </div>
 <script src="../js/script.js"></script>
+<script src="../js/jquery-1.12.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#myModal').modal('show');
+        $('.jPanelMenu-panel').css({"z-index": "auto", "transform": ""});
+        $('.header').css('z-index', '1000');
+    });
+</script>
 </body>
 </html>

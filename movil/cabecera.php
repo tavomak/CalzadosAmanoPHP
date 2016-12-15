@@ -16,8 +16,14 @@ include "../include/functions/database.php";
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="../css/stylesmovil.css">
 <link rel="stylesheet" type="text/css" href="../css/menumovil.css">
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<style type="text/css">
+    .modal-dialog{
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        }
+</style>
 </head>

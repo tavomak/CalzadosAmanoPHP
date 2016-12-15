@@ -1,5 +1,5 @@
 <?php
-$useragent=$_SERVER['HTTP_USER_AGENT'];
+	$useragent=$_SERVER['HTTP_USER_AGENT'];
 
 $mobile_browser = '0';
 
@@ -97,6 +97,23 @@ if ($mobile_browser>0){ ?>
  session_start(); ?>
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime()
+                , event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0]
+                , j = d.createElement(s)
+                , dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KWJLCQF');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -107,20 +124,147 @@ if ($mobile_browser>0){ ?>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/basic.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css">
-    <link rel="stylesheet" type="text/css" href="css/inicio.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+        #resultado {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 300;
+            width: 100%;
+            margin-top: 0%;
+            margin-left: 0%;
+            height: 100%;
+            background-color: #000;
+            filter: alpha(opacity=70);
+            opacity: .7;
+            font-size: 12px;
+            padding-top: 100px;
+            display: none;
+        }
+        .modal-dialog{
+            background: none;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+        }
+
+    </style>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        function vv() {
+            document.getElementById('ventanaRegistro').style.display = "block";
+            document.getElementById('videoYoutube').style.display = "block";
+        }
+
+        function cerrar() {
+            window.location.href = "index.php";
+        }
+
+        function ocultar() {
+            document.getElementById('resultado').style.display = "none";
+            document.getElementById('toma').style.display = "none";
+        }
+    </script>
 </head>
 
+
 <body>
-   <header>
-        <?php include "include/navegacion.php"; ?>
-    </header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWJLCQF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="wrapper">
         <div id="intwrapper">
             <a href="javascript: ocultar();">
                 <div id="resultado" align="center"></div>
             </a>
+            <header>
+                <div id="logo">
+                    <a href="index.php"><img src="images/logo.png" width="207" height="66"></a>
+                </div>
+                <nav id="redes">
+                    <a href="pages/registrarse.php" class="boton btn_registrarse"></a>
+                    <a href="pages/iniciar.php" class="boton btn_sesion"></a>
+                    <a href="https://www.facebook.com/pages/Calzados-A-Mano/496423987087853" class="boton btn_facebook" target="_blank"></a>
+                    <a href="https://twitter.com/amanocalzados" class="boton btn_twitter" target="_blank"></a>
+                    <a href="http://instagram.com/calzadosamano" class="boton btn_instagram" target="_blank"></a>
+                    <a href="pages/mispedidos.php" class="boton btn_carrito"></a>
+                    <span style="color: #009999; margin-left:10px; font-weight:bold;"><?php echo $_SESSION['articulos'];?></span>
+                </nav>
+                <div class="separador" style="margin-top:10px; margin-bottom:10px;"></div>
+                <nav id="menu">
+                    <ul class="menu">
+                        <?php if ($pages=="/pages/nosotros.php")  { $class='btn_nuestrashover'; } else { $class='btn_nuestras'; } ?>
+                        <li>
+                            <a href="pages/nosotros.php" class="opcion <?php echo $class;?>"></a>
+                        </li>
+                        <?php if (($pages=="/pages/cintillosb.php")||($pages=="/pages/bebes.php")||($pages=="/pages/lazosb.php")||($pages=="/pages/pijamasb.php")) { $class='btn_bebeshover'; } else { $class='btn_bebes'; } ?>
+                        <li>
+                            <a href="#" class="opcion <?php echo $class;?>"></a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="pages/bebes.php" class="btn_menu btn_zapatos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/lazosb.php" class="btn_menu btn_lazos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/cintillosb.php" class="btn_menu btn_cintillos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/pijamasb.php" class="btn_menu btn_pijamas"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <?php if (($pages=="/pages/cintillosg.php")||($pages=="/pages/girls.php")||($pages=="/pages/lazosg.php")||($pages=="/pages/pijamasg.php")) { $class='btn_girlshover'; } else { $class='btn_girls'; } ?>
+                        <li>
+                            <a href="#" class="opcion <?php echo $class;?>"></a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="pages/girls.php" class="btn_menu btn_zapatos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/lazosg.php" class="btn_menu btn_lazos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/cintillosg.php" class="btn_menu btn_cintillos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/pijamasg.php" class="btn_menu btn_pijamas"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <?php if (($pages=="/pages/boys.php")||($pages=="/pages/pijamaso.php")) { $class='btn_boyshover'; } else { $class='btn_boys'; } ?>
+                        <li>
+                            <a href="#" class="opcion <?php echo $class;?>"></a>
+                            <ul class="menu2">
+                                <li>
+                                    <a href="pages/boys.php" class="btn_menu btn_zapatos"></a>
+                                </li>
+                                <li>
+                                    <a href="pages/pijamaso.php" class="btn_menu btn_pijamas"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <?php if ($pages=="/pages/colegial.php")  { $class='btn_colegialhover'; } else { $class='btn_colegial'; } ?>
+                        <li>
+                            <a href="pages/colegial.php" class="opcion <?php echo $class;?>"></a>
+                        </li>
+                        <?php if ($pages=="/pages/mispedidos.php")  { $class='btn_pedidoshover'; } else { $class='btn_pedidos'; } ?>
+                        <li>
+                            <a href="pages/mispedidos.php" class="opcion <?php echo $class;?>"></a>
+                        </li>
+                        <?php if ($pages=="/pages/contacto.php")  { $class='btn_contactohover'; } else { $class='btn_contacto'; } ?>
+                        <li>
+                            <a href="pages/contacto.php" class="opcion <?php echo $class;?>"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
 
+            <!-- <a href="javascript:alertSize();" > mostrar Height / Width </a><p id="resultado"></p>  -->
 
             <div id="ventanaRegistro" name="ventanaRegistro" class="ventanaRegistro" onClick="cerrar()"></div>
             <div id="videoYoutube" name="videoYoutube" class="videoYoutube centrado-porcentual">
@@ -133,14 +277,55 @@ if ($mobile_browser>0){ ?>
                 <section id="derecha">
                     <a href="javascript: vv();" class="btn_ver"></a>
                     <br> </section>
+            </div><!--fin container -->
+        </div><!-- fin intwrapper -->
+
+        <!-- Button trigger modal
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <img src="images/logo.png" alt="Calzados a mano">
+                    </div>
+                    <div class="modal-body">
+                        <h2 class="modal-title" id="myModalLabel"><strong>¡Calzados A´Mano les desea una Feliz Navidad y Prospero Año Nuevo!</strong></h2>
+                        <h3 style="line-height: 90%; ">Pedidos recibidos a partir del 19 de diciembre de 2016 serán enviados a partir del 17 de enero de 2017 para garantizar un buen servicio.</h3>
+                        <h3>Gracias por preferirnos.</h3>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
             </div>
         </div>
+        <?php include "pages/footer.php"; ?>
     </div>
-    <?php include "pages/footer.php"; ?>
     <!-- fin wrapper -->
-    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="js/jquery-1.12.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/inicio.js"></script>
+    <script>
+        $('#toma').css({
+            left: ($(window).width() - $('#toma').outerWidth()) / 2
+        });
+        $(document).ready(function () {
+            $('#myModal').modal('show');
+            $(window).resize(function () {
+                // aquí le pasamos la clase o id de nuestro div a centrar (en este caso "caja")
+                $('#toma').css({
+                    left: ($(window).width() - $('#toma').outerWidth()) / 2
+                });
+            });
+            // Ejecutamos la función
+            $(window).resize();
+        });
+    </script>
 </body>
 
 </html>
